@@ -20,6 +20,17 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var switch1: UISwitch!
+    
+    @IBAction func switched(sender: AnyObject) {
+        if(switch1.on){
+            self.view.backgroundColor = UIColor.blackColor()
+        }else{
+            self.view.backgroundColor = UIColor.redColor()
+        }
+    
+    }
+    
 
 }
 
